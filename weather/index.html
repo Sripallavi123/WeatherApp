@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen flex-col-center transition-all default">
+    <div class="container text-center">
+        <h1 class="text-white heading">Weather App</h1>
+        
+        <!-- Search Bar and Buttons -->
+        <div class="search-group">
+            <input id="city-input" type="text" placeholder="Enter city (e.g., London,UK)" class="input-city">
+            <div class="button-group">
+                <button id="search-btn" class="button button-cyan">
+                    <i class="fas fa-search"></i> Search
+                </button>
+                <button id="refresh-btn" class="button button-cyan">
+                    <i class="fas fa-sync-alt"></i> Refresh
+                </button>
+            </div>
+        </div>
+        
+        <!-- Loading Spinner -->
+        <div id="loading" class="hidden text-white text-loading">
+            <i class="fas fa-spinner fa-spin"></i> Loading...
+        </div>
+        
+        <!-- Error Message -->
+        <div id="error-message" class="hidden text-error"></div>
+        
+        <!-- Weather Display (Google-like) -->
+        <div id="weather-display" class="hidden weather-card">
+            <h2 id="city-name" class="city-name"></h2>
+            <div class="weather-main">
+                <img id="weather-icon" src="" alt="" class="weather-icon">
+                <p id="temperature" class="temperature"></p>
+            </div>
+            <p id="description" class="description"></p>
+            <p id="feels-like" class="feels-like"></p>
+            <div class="weather-details">
+                <p id="humidity" class="detail"><i class="fas fa-tint icon-cyan"></i> </p>
+                <p id="wind-speed" class="detail"><i class="fas fa-wind icon-cyan"></i> </p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Confetti for Refresh -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
