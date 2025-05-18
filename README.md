@@ -35,8 +35,8 @@ weather-app/
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/weather-app.git
-   cd weather-app
+   git clone https://github.com/Sripallavi123/WeatherApp.git
+   cd WeatherApp
    ```
 
 2. **Get an OpenWeatherMap API Key**:
@@ -68,7 +68,11 @@ weather-app/
 
 ## Screenshots
 
-*Coming soon!*
+![Screenshot (326)](https://github.com/user-attachments/assets/e15499e7-34e9-4b9d-8a5d-17ce2d1d1474)
+
+![Screenshot (327)](https://github.com/user-attachments/assets/3fd414ea-e92d-4521-9688-72fd1db9d2f3)
+![Screenshot (328)](https://github.com/user-attachments/assets/3b436054-15e5-4525-b6c6-28d48694af2b)
+
 
 ## Troubleshooting
 
@@ -108,7 +112,7 @@ This project is licensed under the MIT License.
 
 - [OpenWeatherMap](https://openweathermap.org/) for the weather API.
 - [Unsplash](https://unsplash.com/) for the sea-themed background.
-- Built with inspiration from Guntur’s vibrant spirit!
+
 
 ---
 
